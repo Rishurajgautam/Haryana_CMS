@@ -1,0 +1,557 @@
+<!-- This project will be in HTMl,Tailwind -->
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title  -->
+  <title>Haryana CMS | Dashboard</title>
+  <!-- stylesheet  -->
+  
+  
+
+
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- tailwind css -->
+  <script src="./assets/js/alpine.min.js"></script>
+  <script src="./assets/js/Chart.min.js"></script>
+
+  <!-- jQuery Data Tables -->
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/media/js/jquery.dataTables.min.js"></script>
+  <script src="./assets/js/table-dashboard.js"></script>
+  <link rel="stylesheet" href="/assets/dashboard-01b1f282.css">
+  <link rel="stylesheet" href="/assets/index-dc7dbe13.css">
+</head>
+
+<body class="font-Roboto bg-gray-100">
+  <div class="w-full flex flex-row gap-3 ">
+    <div class="container w-[21rem]">
+      <!-- sidebar start -->
+      <div class=" container sidebar">
+        <div class="logo w-full h-auto bg-gray-50 drop-shadow-md shadow-md">
+          <!-- logo -->
+          <div class=" flex flex-row justify-center items-center bg-gray-100 p-3 shadow-sm drop-shadow-sm ">
+            <img src="/assets/logo1-2eec1802.png" alt="logo" class="w-10 h-10 mr-3">
+            <h1 class="font-extrabold font-Roboto md:text-xl">Haryana CMS</h1>
+          </div>
+          <div class="m-4 shadow-sm drop-shadow-sm">
+            <p class="text-sm">MAIN</p>
+            <div class="m-4 p-3">
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold">
+                <a href="dashboard.html" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>
+                  <p class="text-md px-2">Dashboard</p>
+                </a>
+              </div>
+            </div>
+            <p class="text-sm">Manage Complaints</p>
+            <div class="m-4 p-3 ">
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+
+                  <p class="text-md px-2">All Complaints</p>
+                </a>
+              </div>
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold  mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">Today Complaints</p>
+                </a>
+              </div>
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold  mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">High Priority</p>
+                </a>
+              </div>
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold  mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">Pending Complaints</p>
+                </a>
+              </div>
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold  mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">Closed Complaints</p>
+                </a>
+              </div>
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold  mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">View Reports</p>
+                </a>
+              </div>
+            </div>
+            <p class="text-sm">Manage Officers</p>
+            <div class="m-4 p-3 ">
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">District Officers</p>
+                </a>
+              </div>
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold  mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">District SHO</p>
+                </a>
+              </div>
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold  mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">Send Notes</p>
+                </a>
+              </div>
+            </div>
+            <p class="text-sm">Manage Reports</p>
+            <div class="m-4 p-3 ">
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">Pending Reports</p>
+                </a>
+              </div>
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold  mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">Closed Reports</p>
+                </a>
+              </div>
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold  mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">Range Reports</p>
+                </a>
+              </div>
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold  mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">High Priority Reports</p>
+                </a>
+              </div>
+              <div class="text-[#6c5ffc] hover:text-[#d01d4d] hover:font-bold  mb-4">
+                <a href="#" class="flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                  </svg>
+                  <p class="text-md px-2">View All Reports</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end sidebar -->
+
+    <div class="container w-full">
+      <div class=" flex flex-col gap-5">
+        <!-- Navbar -->
+        <div class="topbar">
+          <header class="z-40 items-center w-full h-16 bg-white shadow-lg dark:bg-gray-700">
+            <div class="relative z-20 flex flex-col justify-center h-full px-3 mx-auto flex-center">
+              <div class="relative flex items-center w-full pl-1 lg:max-w-68 sm:pr-2 sm:ml-0">
+                <div class="container relative left-0 z-50 flex w-3/4 h-auto ">
+                  <div class="relative flex items-center w-full h-full lg:w-64 group">
+                    <div
+                      class="absolute z-50 flex items-center justify-center  w-auto h-10 p-3 pr-2 text-sm text-gray-500 uppercase cursor-pointer sm:hidden">
+                      <svg fill="none" class="relative w-5 h-5" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z">
+                        </path>
+                      </svg>
+                    </div>
+                    <svg
+                      class="absolute left-0 z-20 hidden w-4 h-4 ml-4 text-gray-500 pointer-events-none fill-current group-hover:text-gray-400 sm:block"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path
+                        d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z">
+                      </path>
+                    </svg>
+                    <input type="text"
+                      class="block w-full py-1.5 pl-10 pr-4 leading-normal rounded-2xl focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 ring-opacity-90 bg-gray-100 dark:bg-gray-800 text-gray-400 aa-input"
+                      placeholder="Search" />
+                    <div
+                      class="absolute right-0 hidden h-auto px-2 py-1 mr-2 text-xs text-gray-400 border border-gray-300 rounded-2xl md:block">
+                      +
+                    </div>
+                  </div>
+                </div>
+                <div class="relative flex items-center justify-end w-1/4 p-1 ml-5 mr-4 sm:mr-0 sm:right-auto">
+                  <a href="#" class="relative block">
+                    <img alt="profil" src="/assets/logo1-2eec1802.png"
+                      class="mx-auto object-cover rounded-full h-10 w-10 " />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </header>
+
+        </div> <!-- end Navbar -->
+        <!-- breadcrum -->
+        <div class="mainarea flex justify-between p-5">
+          <h1 class="text-gray-600 font-medium ">Dashboard</h1>
+          <div>
+            <p><span class="text-gray-600">Home</span> / <span class="text-blue-600">Dashboard</span></p>
+          </div>
+        </div> <!-- end breadcrum -->
+        <!-- Main Area  -->
+        <div class="main flex flex-col sm:flex-row gap-4">
+          <!-- card 1  -->
+
+          <div
+            class="flex flex-row justify-between gap-12 p-6 bg-white rounded-lg shadow-xl md:p-8 dark:bg-gray-800 md:items-center ">
+            <div class="flex flex-col gap-1 justify-start">
+              <span class="text-red-600 font-semibold text-sm">Total Complaints</span>
+              <span class="text-xl font-extrabold">12700</span>
+              <span class="font-semibold text-sm">Karnal Range</span>
+            </div>
+            <img src="data:image/png;base64,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" alt="chart" class="w-20 h-20">
+          </div>
+          <!-- card 2 -->
+
+          <div
+            class="flex flex-row justify-between gap-12 p-6 bg-white rounded-lg shadow-xl md:p-8 dark:bg-gray-800 md:items-center">
+            <div class="flex flex-col gap-1 justify-start">
+              <span class="text-red-600 font-semibold text-sm">Total Pending</span>
+              <span class="text-xl font-extrabold">500</span>
+              <span class="font-semibold text-sm">Karnal Range</span>
+            </div>
+            <img src="/assets/chart-widget2-35644bce.png" alt="chart" class="w-20 h-20">
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="flex flex-row justify-between gap-12 p-6 bg-white rounded-lg shadow-xl md:p-8 dark:bg-gray-800 md:items-center">
+            <div class="flex flex-col gap-1 justify-start">
+              <span class="text-red-600 font-semibold text-sm">High Priority</span>
+              <span class="text-xl font-extrabold">100</span>
+              <span class="font-semibold text-sm">Karnal Range</span>
+            </div>
+            <img src="/assets/chart-widget3-2aee5d7d.png" alt="chart" class="w-20 h-20">
+          </div>
+
+          <!-- card 4 -->
+          <div
+            class="flex flex-row justify-between gap-12 p-6 bg-white rounded-lg shadow-xl md:p-8 dark:bg-gray-800 md:items-center">
+            <div class="flex flex-col gap-1 justify-start">
+              <span class="text-red-600 font-semibold text-sm">Officers Complaints</span>
+              <span class="text-xl font-extrabold">200</span>
+              <span class="font-semibold text-sm">Karnal Range</span>
+            </div>
+            <img src="/assets/chart-widget4-d659d5c2.png" alt="chart" class="w-20 h-20">
+          </div>
+        </div>
+        <!-- 2nd Row  -->
+        <div class="flex flex-col sm:flex-row gap-3">
+          <!-- 1st card  -->
+          <!-- chart  -->
+          <div class="w-full max-w-full  mt-0 lg:w-8/12 lg:flex-none">
+            <div
+              class="relative z-20 flex flex-col min-w-0 break-words bg-white border-0 border-solid dark:bg-gray-950 border-black-125 shadow-soft-xl dark:shadow-soft-dark-xl rounded-2xl bg-clip-border">
+              <div class="p-6 pb-0 mb-0 border-b-0 border-solid border-black-125 rounded-t-2xl">
+                <div class="flex flex-row justify-between mb-3">
+                  <h6 class="dark:text-white">Analytics</h6>
+                  <h6>Karnal Range</h6>
+                </div>
+              </div>
+              <hr class="w-full">
+              <div class="flex flex-row justify-center gap-8">
+                <div class="flex flex-row gap-2 justify-center items-center">
+                  <div class="h-3 w-3 bg-blue-800 rounded-full"></div>
+                  <h6 class="text-xs text-blue-800 font-semibold">Resolved Complaints</h6>
+                </div>
+                <div class="flex flex-row gap-2 justify-center items-center">
+                  <div class="h-3 w-3 bg-[#02c4fd] rounded-full"></div>
+                  <h6 class="text-xs text-[#02c4fd] font-semibold">Closed Complaints</h6>
+                </div>
+              </div>
+              <div class="flex-auto p-4">
+                <div>
+                  <canvas id="chart-line" height="300"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd card  -->
+          <div class="w-full max-w-full px-3 mt-0 mb-6 lg:mb-0 lg:w-4/12 lg:flex-none">
+            <div
+              class="border-black/12.5 shadow-soft-xl relative z-20 flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
+              <div class="flex-auto p-4">
+                <div class="py-4 pr-1 mb-4 bg-[#704bfa] bg-gradient-to-tl from-gray-900 to-slate-800 rounded-xl">
+                  <div>
+                    <canvas id="chart-bars" height="170"></canvas>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex flex-row justify-between p-4">
+                    <div class="flex flex-row justify-start items-center gap-3">
+                      <div class="w-10 h-10 bg-successstatus flex items-center justify-center rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                      </div>
+                      <div class="flex flex-col">
+                        <h1 class="text-md text-blue-700 font-semibold">Justice For Complaints</h1>
+                        <p class="text-sm">Nov-22</p>
+                      </div>
+                    </div>
+                    <span class="text-lg font-bold">120</span>
+                  </div>
+                  <div class="flex flex-row justify-between p-4">
+                    <div class="flex flex-row justify-start items-center gap-3">
+                      <div class="w-10 h-10 bg-dangerstatus flex items-center justify-center rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-red-500">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        
+                      </div>
+                      <div class="flex flex-col">
+                        <h1 class="text-md text-blue-700 font-semibold">No-Justice For Complaints</h1>
+                        <p class="text-sm">Nov-22</p>
+                      </div>
+                    </div>
+                    <span class="text-lg text-red-500 font-bold">10</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!--- 2nd row end  -->
+        <!-- 3rd row  -->
+        <div>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <!-- 1st card  -->
+            <div class="w-full max-w-full md:w-1/2  md:flex-none lg:w-1/2 lg:flex-none">
+              <div
+                class="border-black/12.5 shadow-soft-xl relative flex h-full min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
+                <div class="border-black/12.5 mb-0 rounded-t-2xl border-b-0 border-solid bg-white p-6 pb-0">
+                  <h6>Daily <span class="text-red-600 text-xl font-bold">Notes</span></h6>
+                </div>
+                <hr>
+                <div class="flex-auto p-4">
+                  <ul>
+                    <li class="relative flex items-baseline gap-6 pb-5">
+                      <div
+                        class="before:z-0 before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                          class="bi bi-circle-fill fill-green-400 z-10 " viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h2 class="text-md text-blue-800 font-bold">Officers Information</h2>
+                        <p class="mt-2 text-gray-600 text-sm">By Mahesh Singh,SHO,Sadar,Karnal</p>
+                      </div>
+                    </li>
+                    <li class="relative flex items-baseline gap-6 pb-5">
+                      <div
+                        class="before:z-0 before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                          class="bi bi-circle-fill fill-red-400 z-10 " viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h2 class="text-md text-blue-800 font-bold">Officers Information</h2>
+                        <p class="mt-2 text-gray-600 text-sm">By Mahesh Singh,SHO,Sadar,Karnal</p>
+                      </div>
+                    </li>
+                    <li class="relative flex items-baseline gap-6 pb-5">
+                      <div
+                        class="before:z-0 before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                          class="bi bi-circle-fill fill-yellow-400 z-10 " viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h2 class="text-md text-blue-800 font-bold">Officers Information</h2>
+                        <p class="mt-2 text-gray-600 text-sm">By Mahesh Singh,SHO,Sadar,Karnal</p>
+                      </div>
+                    </li>
+                    <li class="relative flex items-baseline gap-6 pb-5">
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                          class="bi bi-circle-fill fill-green-400 z-10 " viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h2 class="text-md text-blue-800 font-bold">Officers Information</h2>
+                        <p class="mt-2 text-gray-600 text-sm">By Mahesh Singh,SHO,Sadar,Karnal</p>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- 2nd card  -->
+            <div class="w-full max-w-full md:w-1/2 md:flex-none lg:w-1/2 lg:flex-none">
+              <div
+                class="border-black/12.5 shadow-soft-xl relative flex h-full min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
+                <div class="border-black/12.5 mb-0 rounded-t-2xl border-b-0 border-solid bg-white p-6 pb-0">
+                  <h6 class="text-start text-xl font-normal">Message From ADGP</h6>
+                </div>
+                <hr>
+                <div class="p-5 text-lg text-gray-500 font-Libre font-normal">
+                  <p>"I am a firm believer that without public
+                    support, the Police can not be effective.
+                    Crusade against criminals, terrorists,
+                    anti-social elements, economic offend-
+                    ers, smugglers etc. cannot be successful
+                    without the active cooperation of the
+                    public. I take this opportunity to seek
+                    cooperation of all the citizens and reaf-
+                    firm our resolve to make Haryana Police
+                    an effective and efficient organization
+                    dedicated to the service of the people."</p>
+                </div>
+
+              </div>
+            </div>
+            
+          </div><!---3rd row end-->
+        </div>
+        <!-- 4th Row  -->
+        <!-- Bottom Table -->
+        <div class="w-full max-w-full mb-2 lg:flex-none">
+          <div
+            class="relative z-20 flex flex-col min-w-0 break-words bg-white border-0 border-solid dark:bg-gray-950 border-black-125 shadow-soft-xl dark:shadow-soft-dark-xl rounded-2xl bg-clip-border">
+            <div class="p-6 pb-0 mb-0 border-b-0 border-solid border-black-125 rounded-t-2xl">
+              <div class="flex flex-row justify-between mb-3">
+                <h6 class="dark:text-white">Latest Complaints : Karnal Range</h6>
+                <div class="flex flex-row gap-5 font-bold">
+                  <h6>Pending</h6>
+
+                  <h6>Cancelled</h6>
+
+                </div>
+              </div>
+            </div>
+            <hr class="w-full">
+            <div class="w-full flex-auto p-4">
+              <table id="dashboardTable" class="border row-border hover" >
+                <thead>
+                  <tr>
+                    <th class="px-4 py-3 border border-spacing-2">Tracking ID</th>
+                    <th class="px-4 py-3 border border-spacing-2">Complaint From</th>
+                    <th class="px-4 py-3 border border-spacing-2">Complaint By</th>
+                    <th class="px-4 py-3 border border-spacing-2">Issued Date</th>
+                    <th class="px-4 py-3 border border-spacing-2">Area</th>
+                    <th class="px-4 py-3 border border-spacing-2">Deadline</th>
+                    <th class="px-4 py-3 border border-spacing-2">Status</th>
+                    <!-- <th class="px-4 py-3 border border-spacing-2">Action</th> -->
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="./assets/js/chartjs.min.js"></script>
+  <script src="./assets/js/chart.js"></script>
+</body>
+
+</html>

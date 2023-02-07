@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#dashboardTable").DataTable({responsive:!0,ajax:{url:"./assets/data/dashboard-data.json",dataSrc:"data"},columns:[{data:"Tracking ID"},{data:"Complaint From"},{data:"Complaint By"},{data:"Issued Date"},{data:"Area"},{data:"Deadline"},{data:"Status"}]})});
