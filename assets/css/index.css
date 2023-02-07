@@ -1,0 +1,30 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .solved {
+      @apply bg-successstatus text-[#155724] border-[#c3e6cb];
+    }
+    .danger {
+      @apply text-red-600 bg-dangerstatus border-[#f5c6cb];
+    }
+    .warning {
+      @apply text-[#fff3cd] bg-[#856404] border-[#ffeeba];
+    }
+    .info {
+      @apply text-[#d1ecf1] bg-[#0c5460] border-[#bee5eb];
+    }
+    .light {
+      @apply text-[#fefefe] bg-[#818182] border-[#fdfdfe];
+    }
+    .dark {
+      @apply text-[#d6d8d9] bg-[#1b1e21] border-[#c6c8ca];
+    }
+    
+    .btn-status {
+      @apply text-center text-sm py-1 px-3  rounded-full;
+    }
+
+  }

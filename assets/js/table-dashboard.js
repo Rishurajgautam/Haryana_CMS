@@ -1,8 +1,9 @@
+
+
 $(document).ready(function () {
   $("#dashboardTable").DataTable({
     responsive: true,
-    
-
+      
     ajax: {
       url: "./assets/data/dashboard-data.json",
       dataSrc: "data",
